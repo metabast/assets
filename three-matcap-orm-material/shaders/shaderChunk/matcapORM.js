@@ -55,4 +55,3 @@ diffuseColor.rgb = uColor;
 #endif
 outgoingLight = diffuseColor.rgb * matcapProgress;
 `;
-//# sourceMappingURL=matcapORM.js.map

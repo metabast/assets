@@ -1,2 +1,0 @@
-declare const _default: "\n#define MATCAP\n\nuniform float uPower;\nuniform float uRoughness;\nuniform float uMetalness;\nuniform vec3 uColor;\n\nuniform sampler2D uMap2;\nuniform sampler2D uRoughnessMap;\nuniform sampler2D uMetalnessMap;\n\nfloat map(float value, float min1, float max1, float min2, float max2) {\n    return min2 + (value - min1) * (max2 - min2) / (max1 - min1);\n}\n\nvec4 getCellMatcap( sampler2D matcap, vec2 uv, float row, float col ) {\n    return texture2D(matcap, vec2(uv.x/3., uv.y/3.) + vec2(1./3.*col, 1./3.*row) );\n}\n";
-export default _default;

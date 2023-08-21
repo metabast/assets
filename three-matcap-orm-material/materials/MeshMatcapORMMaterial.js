@@ -58,4 +58,3 @@ export class MeshMatcapORMMaterial extends THREE.MeshMatcapMaterial {
         return this.customUniforms.uMetalness.value;
     }
 }
-//# sourceMappingURL=MeshMatcapORMMaterial.js.map
