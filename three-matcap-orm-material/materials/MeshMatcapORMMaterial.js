@@ -57,4 +57,17 @@ export class MeshMatcapORMMaterial extends THREE.MeshMatcapMaterial {
     get metalness() {
         return this.customUniforms.uMetalness.value;
     }
+    applyMapsFromOtherMaterial(material) {
+        if (material.color)
+            this.color2 = material.color;
+        if (material.map) {
+            this.map2 = material.map;
+        }
+        if (material.roughness)
+            this.roughness = material.roughness;
+        if (material.roughnessMap)
+            this.roughnessMap = material.roughnessMap;
+        if (material.normalMap)
+            this.normalMap = material.normalMap;
+    }
 }
